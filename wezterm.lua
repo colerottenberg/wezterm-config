@@ -16,6 +16,7 @@ config = {
   scrollback_lines = 3500,
   default_prog = { "/usr/bin/zsh" },
   keys = {
+    { key = "f", mods = "CTRL|SHIFT", action = wezterm.action.ToggleFullScreen },
     { key = "t", mods = "CTRL",       action = wezterm.action { SpawnTab = "CurrentPaneDomain" } },
     { key = "t", mods = "CTRL|SHIFT", action = wezterm.action { SpawnTab = "CurrentPaneDomain" } },
     { key = "w", mods = "CTRL",       action = wezterm.action { CloseCurrentTab = { confirm = true } } },
