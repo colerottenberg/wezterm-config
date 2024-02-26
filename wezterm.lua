@@ -16,6 +16,7 @@ config = {
   scrollback_lines = 3500,
   default_prog = { "/usr/bin/zsh" },
   keys = {
+    { key = "q", mods = "CTRL|SHIFT", action = wezterm.action.QuitApplication },
     { key = "f", mods = "CTRL|SHIFT", action = wezterm.action.ToggleFullScreen },
     { key = "p", mods = "CTRL|SHIFT", action = wezterm.action.ActivateCommandPalette },
     { key = "t", mods = "CTRL",       action = wezterm.action { SpawnTab = "CurrentPaneDomain" } },
