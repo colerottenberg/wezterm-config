@@ -14,7 +14,7 @@ config = {
   },
   enable_scroll_bar = true,
   scrollback_lines = 3500,
-  default_prog = { "/usr/bin/zsh" },
+  -- Turn Command to Contol on passthrough
   keys = {
     { key = "q", mods = "CTRL|SHIFT", action = wezterm.action.QuitApplication },
     { key = "f", mods = "CTRL|SHIFT", action = wezterm.action.ToggleFullScreen },
