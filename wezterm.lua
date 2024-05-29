@@ -3,7 +3,7 @@ local ssh_domains = require("extra.ssh")
 
 config = {
 	-- font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "Regular" }),
-	font = wezterm.font("MesloLGS Nerd Font", { weight = "Regular" }),
+	font = wezterm.font("MesloLGS Nerd Font Mono", { weight = "Regular" }),
 	font_size = 12.0,
 	color_scheme = "Catppuccin Macchiato",
 	hide_tab_bar_if_only_one_tab = true,
