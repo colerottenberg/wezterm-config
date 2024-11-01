@@ -4,8 +4,8 @@ local ssh_domains = require("extra.ssh")
 config = {
 	-- font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "Regular" }),
 	font = wezterm.font("MesloLGS Nerd Font Mono", { weight = "Regular" }),
-	font_size = 12.0,
-	color_scheme = "Catppuccin Macchiato",
+	font_size = 14.0,
+	color_scheme = "Catppuccin Latte",
 	hide_tab_bar_if_only_one_tab = true,
 	window_padding = {
 		left = 2,
@@ -20,11 +20,11 @@ config = {
 		{ key = "q", mods = "CTRL|SHIFT", action = wezterm.action.QuitApplication },
 		{ key = "f", mods = "CTRL|SHIFT", action = wezterm.action.ToggleFullScreen },
 		{ key = "p", mods = "CTRL|SHIFT", action = wezterm.action.ActivateCommandPalette },
-		{ key = "t", mods = "CTRL", action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }) },
+		{ key = "t", mods = "CTRL",       action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }) },
 		{ key = "t", mods = "CTRL|SHIFT", action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }) },
-		{ key = "w", mods = "CTRL", action = wezterm.action({ CloseCurrentTab = { confirm = true } }) },
+		{ key = "w", mods = "CTRL",       action = wezterm.action({ CloseCurrentTab = { confirm = true } }) },
 		{ key = "c", mods = "CTRL|SHIFT", action = wezterm.action({ CopyTo = "Clipboard" }) },
-		{ key = "v", mods = "CTRL", action = wezterm.action({ PasteFrom = "Clipboard" }) },
+		{ key = "v", mods = "CTRL",       action = wezterm.action({ PasteFrom = "Clipboard" }) },
 	},
 	ssh_domains = ssh_domains,
 }
