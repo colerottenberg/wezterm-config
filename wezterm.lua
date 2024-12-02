@@ -1,5 +1,5 @@
 local wezterm = require("wezterm")
-local ssh_domains = require("extra.ssh")
+-- local ssh_domains = require("extra.ssh")
 
 config = {
 	-- font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "Regular" }),
@@ -26,7 +26,7 @@ config = {
 		{ key = "c", mods = "CTRL|SHIFT", action = wezterm.action({ CopyTo = "Clipboard" }) },
 		{ key = "v", mods = "CTRL",       action = wezterm.action({ PasteFrom = "Clipboard" }) },
 	},
-	ssh_domains = ssh_domains,
+	-- ssh_domains = ssh_domains,
 }
 
 return config
